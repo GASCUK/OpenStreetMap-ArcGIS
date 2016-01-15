@@ -30,4 +30,4 @@ There are a number of definition queries set on the layers and in order to speed
 
 The land layer utilises at the [osm_land_polygons](http://openstreetmapdata.com/data/land-polygons).
 
-The bathymetry layer utilises the [Natural Earth bathymetry polygons](http://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-bathymetry).
+The bathymetry layer utilises the [Natural Earth bathymetry polygons](http://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-bathymetry). Select [download all](http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/physical/ne_10m_bathymetry_all.zip) and unzip.
