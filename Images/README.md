@@ -1,2 +1,3 @@
-# OpenStreetMap-ArcGIS
-Contains styles and workflows for processing OpenStreetMap with the OSM Editor for ArcGIS.
+##Images
+
+Images to be used in the repository to demonstrate the project.
