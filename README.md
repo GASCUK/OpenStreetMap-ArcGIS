@@ -6,7 +6,7 @@ The styles are based on the humanitarian theme from [OpenStreetMap](http://opens
 
 _**Note:** It should be noted that it is not recommended to load large areas using these tools. A recent test on the whole of Africa took approximately 7 days to load all the data and create a network dataset. Additionally the layer files have not yet been optimised and can be slow to draw with large amounts of data. The use of attribute indexes should be considered to speed up the layer drawing._
 
-####To do
+#####To do
 This project is still in progress and there are a number of different areas that still need working on:
 - [ ] Create a work flow that will walk through the complete process from loading the data to generating a tile cache.
 - [ ] Generate labels at different zoom levels for country names and capital cities.
