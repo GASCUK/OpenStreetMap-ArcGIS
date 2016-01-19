@@ -15,10 +15,10 @@ This project is still in progress and there are a number of different areas that
 
 The style file contains symbols for four distinct scale levels. Each zoom level groups one or more of the display levels from OpenStreetMap.
 
-Zoom 1: levels 0-10
-Zoom 2: levels 11-12
-Zoom 3: levels 13-15
-Zoom 4: levels 16-19
+- Zoom 1: levels 0-10
+- Zoom 2: levels 11-12
+- Zoom 3: levels 13-15
+- Zoom 4: levels 16-19
 
 The following images are examples of how the layers look. There have been a number of changes to the layers that will be reflected in future updates.
 
