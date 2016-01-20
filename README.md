@@ -1,3 +1,6 @@
+##OpenStreetMap for ArcGIS
+![OSM](https://raw.githubusercontent.com/GASCUK/OpenStreetMap-ArcGIS/master/Images/osm.png)
+
 ##Introduction
 
 Provides a means to style OpenStreetMap data imported into ArcGIS using the [OpenStreetMap Editor for ArcGIS](http://www.esri.com/software/arcgis/extensions/openstreetmap).
