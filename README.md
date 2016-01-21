@@ -16,9 +16,19 @@ The style file contains symbols for four distinct scale levels. Each zoom level 
 3. Display levels 13-15
 4. Display levels 16-19
 
+Each layer file contains the 
+
 ## Workflow
 
+To be able to display OSM data within ArcGIS 
 
+See [WORKFLOW.md](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/WORKFLOW.md).
+
+## Maintainers
+
+- GASC [@gascuk](https://github.com/gascuk)
+- Dave Barrett [@daveb1034](https://github.com/daveb1034)
+- Rachel Munslow [@rmunslow](https://github.com/rmunslow)
 
 ##License
 
