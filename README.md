@@ -16,7 +16,7 @@ The style file contains symbols for four distinct scale levels. Each zoom level 
 3. Display levels 13-15
 4. Display levels 16-19
 
-Each layer file contains specific points, lines and polygon features to be displayed at each level. This information was drawn from the CartoCSS MSS files for the humanitarian layer of OSM. 
+Each layer file contains specific points, lines and polygon features to be displayed at each level. This information was drawn from the CartoCSS MSS files for the OSM humanitarian theme. The features displayed at each level draw their symbology from the stylesheet created based on the Nori and Maki icons, designed to look as similiar to the OSM humanitarian symbols as possible.
 
 **_Note:_** *There are currently no labels included in the template as the speed that the layers take to display is currently being tested. In future, country and captial city labels may be included but more detailed labelling such as rivers and roads will probably not be added*
 
