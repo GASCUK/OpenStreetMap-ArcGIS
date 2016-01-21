@@ -22,7 +22,7 @@ Each layer file contains specific points, lines and polygon features to be displ
 
 ## Workflow
 
-The [stylesheet](https://github.com/GASCUK/OpenStreetMap-ArcGIS/tree/master/Styles), the [layer files](https://github.com/GASCUK/OpenStreetMap-ArcGIS/tree/master/Layers), [raw OSM data](http://download.geofabrik.de/) and the [ArcGIS OSM toolbox](http://www.arcgis.com/home/item.html?id=75716d933f1c40a784243198e0dc11a1) are required to be able to display OSM data within ArcGIS in the style of the humanitarian theme. See [WORKFLOW.md](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/WORKFLOW.md) for more information.
+The stylesheet, the layer files, raw OSM data and the ArcGIS OSM toolbox are required to be able to display OSM data within ArcGIS in the style of the humanitarian theme. See [WORKFLOW.md](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/WORKFLOW.md) for more information.
 
 ## Maintainers
 
