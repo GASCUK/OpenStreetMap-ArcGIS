@@ -42,4 +42,5 @@ There is a specific workflow that needs to be followed in order display OSM data
     * tower:type
     * waterway
  4. Running this tool results in a feature dataset in the file gdb called planet containing three feature classes: planet_osm_ln, planet_osm_ply and planet_osm_pt.
-* Use the **OSM Attribute Selector** tool in the *ArcGIS Editor for OpenStreetMap* toolset on each point, line and polygon feature class to extract OSM keys from the tag collection and store them as standalone attributes.
+3. Use the **OSM Attribute Selector** tool in the *ArcGIS Editor for OpenStreetMap* toolset on each of the three feature classes in turn to extract OSM keys from the tag collection and store them as standalone attributes.
+ 1. df
