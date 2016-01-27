@@ -13,34 +13,20 @@ There is a specific workflow that needs to be followed in order display OSM data
  2. Name the *Target feature dataset* "planet" in this gdb.
  3. Expand the optional *Adjust Input Schema* parameter and add the required OSM tag keys to schema:
     * admin_level
-    * aeroway
-    * amenity
-    * barrier
     * bridge
-    * building
     * content
     * craft
     * drinking_water
     * emergency
     * ford
     * generator:source
-    * highway
-    * landuse
-    * leisure
-    * man_made
-    * natural
     * office
-    * place
-    * power
     * pump
-    * railway
     * religion
-    * route
     * seasonal
-    * shop
-    * tourism
     * tower:type
-    * waterway
+    * tunnel
  4. Running this tool results in a feature dataset in the file gdb called planet containing three feature classes: planet_osm_ln, planet_osm_ply and planet_osm_pt.
 3. Use the **OSM Attribute Selector** tool in the *ArcGIS Editor for OpenStreetMap* toolset on each of the three feature classes in turn to extract OSM keys from the tag collection and store them as standalone attributes.
- 1. df
+ 1. ----insert image here
+ 2. Select 'All' in the *OSM Tag Keys* parameter
