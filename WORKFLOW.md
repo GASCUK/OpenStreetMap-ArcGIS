@@ -2,10 +2,11 @@
 
 There is a specific workflow that needs to be followed in order display OSM data using the layers and stylesheet provided in this repository and optimise the speed at which the data is processed and displayed in ArcGIS.
 
-1. [Downloading and processing the data](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/WORKFLOW.md#downloading-and-processing)
-2. [Setting up an MXD and displaying the data in ArcMap](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/WORKFLOW.md#displaying-in-arcmap)
+1. [Downloading and processing the data](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/WORKFLOW.md#downloading-and-processing).
+2. [Completing the data]().
+3. [Creating an MXD and displaying the processed data in ArcMap](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/WORKFLOW.md#displaying-in-arcmap).
 
-###Downloading and processing
+###Downloading and processing the data
 
 1. Download the raw OSM data for the area of interest from [Geofabrik](http://download.geofabrik.de/). 
  1. Whole continents can be downloaded if necessary but it is not recommended due to the time they take to process. If only a specific country is required then it is much more preferable to download just this data instead. (Note: For example, the whole of Africa took us over 7 days to download and process whereas Cyprus took less than a couple of hours).
@@ -46,5 +47,9 @@ There is a specific workflow that needs to be followed in order display OSM data
        * **planet_osm_pt**: amenity, barrier, highway, leisure, man_made, natural, osm_admin_level, osm_content, osm_craft, osm_drinking_water, osm_emergency, osm_generator_58_source, osm_office, osm_pump, osm_religion, osm_tower_58_type, osmSupportingElement, place, power, shop, tourism.
     2. Run the **Add OSM Attribute Indexes** tool in the [OpenStreetMap Models](https://github.com/GASCUK/OpenStreetMap-ArcGIS/tree/master/Models) toolbox, selecting the three OSM feature classes as inputs.
 
-###Displaying in ArcMap
-1. 
+###Completing the data
+1. Add the [Natural Earth bathymetry data]() and the [OSM dissolved land polygon]() to the file geodatabase alongside the processed OSM data.
+
+###Creating an MXD and displaying the processed data in ArcMap
+1. Create a new blank MXD in your workspace.
+2. Within ArcCatalog, set the MXD data source to the processed OSM file geodatabase.
