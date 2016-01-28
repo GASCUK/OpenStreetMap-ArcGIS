@@ -7,7 +7,7 @@ There is a specific workflow that needs to be followed in order display OSM data
 1. Download the raw OSM data for the area of interest from [Geofabrik](http://download.geofabrik.de/). 
  1. Whole continents can be downloaded if necessary but it is not recommended due to the time they take to process. If only a specific country is required then it is much more preferable to download just this data instead. (Note: For example, the whole of Africa took us over 7 days to download and process whereas Cyprus took less than a couple of hours).
  2. Download the *.bz2 compressed OSM file and unzip. If this file is corrupt then download the *.pbf and use the openly available [OSMConvert](http://wiki.openstreetmap.org/wiki/Osmconvert) tool to convert the *.pbf to a *.osm file.
-2. Load the osm file using the **Load OSM** tool in the *ArcGIS Editor for OpenStreetMap* toolset.
+2. In ArcCatalog, load the osm file using the **Load OSM** tool in the *ArcGIS Editor for OpenStreetMap* toolset.
  1. ----insert image here
  2. Create a file geodatabase in your workspace.
  2. Name the *Target feature dataset* "planet" in this gdb.
@@ -32,7 +32,15 @@ There is a specific workflow that needs to be followed in order display OSM data
     * tower:type
     * tunnel
  4. Running this tool results in a feature dataset in the file gdb called planet containing three feature classes: planet_osm_ln, planet_osm_ply and planet_osm_pt.
-3. Use the **OSM Attribute Selector** tool in the *ArcGIS Editor for OpenStreetMap* toolset on each of the three feature classes in turn to extract OSM keys from the tag collection and store them as standalone attributes.
+3. In ArcCatalog, use the **OSM Attribute Selector** tool in the *ArcGIS Editor for OpenStreetMap* toolset on each of the three feature classes in turn to extract OSM keys from the tag collection and store them as standalone attributes.
  1. ----insert image here
- 2. Select 'All' in the *OSM Tag Keys* parameter and run the tool.
-4. 
+ 2. Select 'Existing_Tags_Only' in the *OSM Tag Keys* parameter and run the tool.
+4. Create attribute indexes for each of the three feature classes within the planet feature dataset.
+ 1. Within ArcCatalog, run the *Add Index Attributes* tool.
+ 3. Click *Add* and select each attribute in turn and add them to the list. There are specific attributes required for the ln, ply and pt feature classes:
+    * planet_osm_ln:
+       * 
+     * planet_osm_ply:
+       * 
+    * planet_osm_pt:
+       * 
