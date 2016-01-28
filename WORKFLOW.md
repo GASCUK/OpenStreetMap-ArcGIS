@@ -41,4 +41,4 @@ There is a specific workflow that needs to be followed in order display OSM data
        * **planet_osm_ln**: aeroway, barrier, highway, osm_bridge, osm_ford, osm_seasonal, osmSupportingElement, power, railway, route, waterway.
        * **planet_osm_ply**: aeroway, amenity, building, highway, landuse, leisure, man_made, natural, osmSupportingElement, tourism, waterway.
        * **planet_osm_pt**: amenity, barrier, highway, leisure, man_made, natural, osm_admin_level, osm_content, osm_craft, osm_drinking_water, osm_emergency, osm_generator_58_source, osm_office, osm_pump, osm_religion, osm_tower_58_type, osmSupportingElement, place, power, shop, tourism.
-    2. Run the **Add OSM Attribute Indexes** tool in the [OpenStreetMap Models](http://github.com) toolbox, selecting the three OSM feature classes as inputs. This is the faster option of the two.
+    2. Run the **Add OSM Attribute Indexes** tool in the [OpenStreetMap Models](https://github.com/GASCUK/OpenStreetMap-ArcGIS/tree/master/Models) toolbox, selecting the three OSM feature classes as inputs. This is the faster option of the two.
