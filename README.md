@@ -18,11 +18,13 @@ The style file contains symbols for four distinct scale levels. Each zoom level 
 
 Each layer file contains specific points, lines and polygon features to be displayed at each level. This information was drawn from the CartoCSS MSS files for the OSM humanitarian theme. The features displayed at each level draw their symbology from the stylesheet created based on the Nori and Maki icons, designed to look as similiar to the OSM humanitarian symbols as possible.
 
-**_Note:_** *There are currently no labels included in the template as the speed that the layers take to display is currently being tested. In future, country and captial city labels may be included but more detailed labelling such as rivers and roads will probably not be added*
+**_Note:_** *There are currently no labels included in the template as the speed that the layers take to display is currently being tested. In future, country and captial city labels may be included but more detailed labelling such as rivers and roads will probably not be added. The information for the labelling, such as feature names, is included in the OSM attributes so it is possible to create labels for projects individually in the meanwhile.*
 
 ## Workflow
 
-The stylesheet, the layer files, raw OSM data and the ArcGIS OSM toolbox are required to be able to display OSM data within ArcGIS in the style of the humanitarian theme. See [WORKFLOW.md](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/WORKFLOW.md) for more information.
+The [stylesheet](https://github.com/GASCUK/OpenStreetMap-ArcGIS/tree/master/Styles), [layer files](https://github.com/GASCUK/OpenStreetMap-ArcGIS/tree/master/Layers), [basic bathymetry and land data](https://github.com/GASCUK/OpenStreetMap-ArcGIS/tree/master/Data), [raw OSM data](http://download.geofabrik.de/) and the [ArcGIS OSM toolbox](http://www.esri.com/software/arcgis/extensions/openstreetmap) are required to be able to display OSM data within ArcGIS in the style of the online OSM humanitarian theme.
+
+See [WORKFLOW.md](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/WORKFLOW.md) for more detailed information.
 
 ## Maintainers
 
