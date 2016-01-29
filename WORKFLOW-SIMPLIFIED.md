@@ -13,30 +13,10 @@ For a more detailed workflow showing exactly what happens at each step, see [WOR
 1. Download the raw OSM data for the area of interest from [Geofabrik](http://download.geofabrik.de/). 
  1. Whole continents can be downloaded if necessary but it is not recommended due to the time they take to process. If only a specific country is required then it is much more preferable to download just this data instead. (Note: For example, the whole of Africa took us over 7 days to download and process whereas Cyprus took less than a couple of hours).
  2. Download the *.bz2 compressed OSM file and unzip. If this file is corrupt then download the *.pbf and use the openly available [OSMConvert](http://wiki.openstreetmap.org/wiki/Osmconvert) tool to convert the *.pbf to a *.osm file.
-2. In ArcCatalog, load the osm file using the **Load OSM** tool in the *ArcGIS Editor for OpenStreetMap* toolset.
+2. In ArcCatalog, load the osm file using the **Load OSM** model in the *OpenStreetMap Models* [toolset](https://github.com/GASCUK/OpenStreetMap-ArcGIS/tree/master/Models)..
  1. ![Load OSM tool](https://raw.githubusercontent.com/GASCUK/OpenStreetMap-ArcGIS/master/Images/LoadOSMFile.png)
  2. Create a file geodatabase in your workspace.
  2. Name the *Target feature dataset* "planet" in this gdb.
- 3. Expand the optional *Adjust Input Schema* parameter and add the required OSM tag keys to schema:
-    * admin_level
-    * bridge
-    * content
-    * craft
-    * drinking_water
-    * emergency
-    * ford
-    * generator:source
-    * maritime
-    * name
-    * name:en
-    * office
-    * oneway
-    * pump
-    * ref
-    * religion
-    * seasonal
-    * tower:type
-    * tunnel
  4. Running this tool results in a feature dataset in the file gdb called planet containing three feature classes: planet_osm_ln, planet_osm_ply and planet_osm_pt.
 3. In ArcCatalog, use the **OSM Attribute Selector** tool in the *ArcGIS Editor for OpenStreetMap* toolset on each of the three feature classes in turn to extract OSM keys from the tag collection and store them as standalone attributes.
  1. ![OSM Attribute Selector tool](https://raw.githubusercontent.com/GASCUK/OpenStreetMap-ArcGIS/master/Images/OSMAttributeSelector.png)
