@@ -48,7 +48,7 @@ There is a specific workflow that needs to be followed in order display OSM data
     2. Run the **Add OSM Attribute Indexes** tool in the [OpenStreetMap Models](https://github.com/GASCUK/OpenStreetMap-ArcGIS/tree/master/Models) toolbox, selecting the three OSM feature classes as inputs.
 
 ###Completing the data set
-1. Add the [Natural Earth bathymetry data]() and the [OSM dissolved land polygon]() to the file geodatabase alongside the processed OSM data.
+1. Add the [Natural Earth bathymetry data](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/Data/README.md) and the [OSM dissolved land polygon](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/Data/README.md) to the file geodatabase alongside the processed OSM data.
 
 ###Creating an MXD and displaying the processed data in ArcMap
 1. Create a new blank MXD in your workspace.
