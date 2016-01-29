@@ -1,6 +1,8 @@
-##Workflow
+##Workflow - Simplified
 
-There is a specific workflow that needs to be followed in order display OSM data using the layers and stylesheet provided in this repository and optimise the speed at which the data is processed and displayed in ArcGIS.
+This workflow is a simplified step by step guide to to display OSM data using the layers and stylesheet provided in this repository and optimise the speed at which the data is processed and displayed in ArcGIS in stages. It uses the purpose built models based on the OpenStreetMap Editor for ArcGIS toolbox that remove the need to a user to put in a number of paramters, such as tag names.
+
+For a more detailed workflow showing exactly what happens at each step, see [WORKFLOW-EXTENDED.md](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/WORKFLOW-EXTENDED.md).
 
 1. [Downloading and processing the data](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/WORKFLOW.md#downloading-and-processing).
 2. [Completing the data set](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/WORKFLOW.md#completing-the-data).
