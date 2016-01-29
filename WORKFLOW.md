@@ -4,7 +4,7 @@ There is a specific workflow that needs to be followed in order display OSM data
 
 1. [Downloading and processing the data](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/WORKFLOW.md#downloading-and-processing-the-data).
 2. [Completing the data set](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/WORKFLOW.md#completing-the-data-set).
-3. [Creating an MXD and displaying the processed data in ArcMap](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/WORKFLOW.md#displaying-in-arcmap).
+3. [Creating an MXD and displaying the processed data in ArcMap](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/WORKFLOW.md#creating-an-mxd-and-displaying-the-processed-data-in-arcmap).
 
 ###Downloading and processing the data
 
