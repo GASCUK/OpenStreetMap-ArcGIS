@@ -15,9 +15,9 @@ For a more simplified workflow using models created by us, see [WORKFLOW-SIMPLIF
  2. Download the *.bz2 compressed OSM file and unzip. If this file is corrupt then download the *.pbf and use the openly available [OSMConvert](http://wiki.openstreetmap.org/wiki/Osmconvert) tool to convert the *.pbf to a *.osm file.
 2. In ArcCatalog, load the osm file using the **Load OSM** tool in the *ArcGIS Editor for OpenStreetMap* toolset.
  1. ![Load OSM tool](https://raw.githubusercontent.com/GASCUK/OpenStreetMap-ArcGIS/master/Images/LoadOSMFile.png)
- 2. Create a file geodatabase in your workspace.
- 2. Name the *Target feature dataset* "planet" in this gdb.
- 3. Expand the optional *Adjust Input Schema* parameter and add the required OSM tag keys to schema:
+ 2. Select the unzipped .osm file as the *Load OSM* parameter.
+ 3. Create a file geodatabase in your workspace and name the *Target feature dataset* "planet" in this gdb.
+ 4. Expand the optional *Adjust Input Schema* parameter and add the required OSM tag keys to schema:
     * admin_level
     * bridge
     * content
@@ -37,7 +37,7 @@ For a more simplified workflow using models created by us, see [WORKFLOW-SIMPLIF
     * seasonal
     * tower:type
     * tunnel
- 4. Running this tool results in a feature dataset in the file gdb called planet containing three feature classes: planet_osm_ln, planet_osm_ply and planet_osm_pt.
+ 5. Running this tool results in a feature dataset in the file gdb called planet containing three feature classes: planet_osm_ln, planet_osm_ply and planet_osm_pt.
 3. In ArcCatalog, use the **OSM Attribute Selector** tool in the *ArcGIS Editor for OpenStreetMap* toolset on each of the three feature classes in turn to extract OSM keys from the tag collection and store them as standalone attributes.
  1. ![OSM Attribute Selector tool](https://raw.githubusercontent.com/GASCUK/OpenStreetMap-ArcGIS/master/Images/OSMAttributeSelector.png)
  2. Select 'EXISTING_TAG_FIELDS' in the *OSM Tag Keys* parameter and run the tool.
