@@ -42,7 +42,7 @@ For a more simplified workflow using models created by us, see [WORKFLOW-SIMPLIF
  1. ![OSM Attribute Selector tool](https://raw.githubusercontent.com/GASCUK/OpenStreetMap-ArcGIS/master/Images/OSMAttributeSelector.png)
  2. Select 'EXISTING_TAG_FIELDS' in the *OSM Tag Keys* parameter and run the tool.
 4. Create attribute indexes for each of the three feature classes within the planet feature dataset.
- 1. In ArcCatalog, run the *Add Index Attributes* tool on each of the feature classes and select the following for each individual one:
+ 1. In ArcCatalog, run the **Add Index Attributes** tool on each of the feature classes and select the following for each individual one:
        * **planet_osm_ln**: aeroway, barrier, highway, osm_bridge, osm_ford, osm_seasonal, osmSupportingElement, power, railway, route, waterway.
        * **planet_osm_ply**: aeroway, amenity, building, highway, landuse, leisure, man_made, natural, osmSupportingElement, tourism, waterway.
        * **planet_osm_pt**: amenity, barrier, highway, leisure, man_made, natural, osm_admin_level, osm_content, osm_craft, osm_drinking_water, osm_emergency, osm_generator_58_source, osm_office, osm_pump, osm_religion, osm_tower_58_type, osmSupportingElement, place, power, shop, tourism.
@@ -51,7 +51,7 @@ For a more simplified workflow using models created by us, see [WORKFLOW-SIMPLIF
 1. Add the [Natural Earth bathymetry data](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/Data/README.md) and the [OSM dissolved land polygon](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/Data/README.md) to the file geodatabase alongside the processed OSM data.
 
 ###Creating an MXD and displaying the processed data in ArcMap
-1. Create a new blank MXD in ArcMap.
-2. Load the [layers](https://github.com/GASCUK/OpenStreetMap-ArcGIS/tree/master/Layers) into the MXD.
+1. Create a new blank MXD in ArcMap and load the [layers](https://github.com/GASCUK/OpenStreetMap-ArcGIS/tree/master/Layers).
+2. Arrange the layers in numerical order.
 3. Close ArcMap. Within ArcCatalog, set the MXD data source to the file geodatabase.
 4. Reopen the MXD in ArcMap to view the symbolised OSM data.
