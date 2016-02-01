@@ -4,9 +4,9 @@ This workflow is a detailed step by step guide to to display OSM data using the 
 
 For a more simplified workflow using models created by us, see [WORKFLOW-SIMPLIFIED.md](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/WORKFLOW-SIMPLIFIED.md).
 
-1. [Downloading and processing the data](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/WORKFLOW.md#downloading-and-processing-the-data).
-2. [Completing the data set](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/WORKFLOW.md#completing-the-data-set).
-3. [Creating an MXD and displaying the processed data in ArcMap](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/WORKFLOW.md#creating-an-mxd-and-displaying-the-processed-data-in-arcmap).
+1. [Downloading and processing the data](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/WORKFLOW-EXTENDED.md#downloading-and-processing-the-data).
+2. [Completing the data set](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/WORKFLOW-EXTENDED.md#completing-the-data-set).
+3. [Creating an MXD and displaying the processed data in ArcMap](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/WORKFLOW-EXTENDED.md#creating-an-mxd-and-displaying-the-processed-data-in-arcmap).
 
 ###Downloading and processing the data
 
