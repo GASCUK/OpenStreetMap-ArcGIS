@@ -51,5 +51,7 @@ For a more simplified workflow using models created by us, see [WORKFLOW-SIMPLIF
 1. Add the [Natural Earth bathymetry data](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/Data/README.md) and the [OSM dissolved land polygon](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/Data/README.md) to the file geodatabase alongside the processed OSM data.
 
 ###Creating an MXD and displaying the processed data in ArcMap
-1. Create a new blank MXD in your workspace.
-2. Within ArcCatalog, set the MXD data source to the processed OSM file geodatabase.
+1. Create a new blank MXD in ArcMap.
+2. Load the [layers](https://github.com/GASCUK/OpenStreetMap-ArcGIS/tree/master/Layers) into the MXD.
+3. Close ArcMap. Within ArcCatalog, set the MXD data source to the file geodatabase.
+4. Reopen the MXD in ArcMap to view the symbolised OSM data.
