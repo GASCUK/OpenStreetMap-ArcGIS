@@ -11,9 +11,9 @@ For a more simplified workflow using models created by us, see [WORKFLOW-SIMPLIF
 ###Downloading and processing the data
 
 1. Download the raw OSM data for the area of interest from [Geofabrik](http://download.geofabrik.de/). 
- 1. Download the BZ2 compressed OSM file and unzip it. _(**Note:** If this file is corrupt then download the PBF and use the openly available [OSMConvert](http://wiki.openstreetmap.org/wiki/Osmconvert) tool to convert the PBF to a OSM file)_.
+ 1. Download the .bz2 compressed OSM file and unzip it. _(**Note:** If this file is corrupt then download the .pbf and use the openly available [OSMConvert](http://wiki.openstreetmap.org/wiki/Osmconvert) tool to convert the .pbf to a .osm file)_.
  3. Whole continents can be downloaded if necessary but it is not recommended due to the time they take to process. If only a specific country is required then it is much more preferable to download just this data instead. _(**Note:** For example, the whole of Africa took us over 7 days to download and process whereas Cyprus took less than a couple of hours)_.
-2. In ArcCatalog, load the osm file using the **Load OSM** tool in the *ArcGIS Editor for OpenStreetMap* toolset, located in *System Toolboxes* in ArcGIS.
+2. In ArcCatalog, load the .osm file using the **Load OSM** tool in the *ArcGIS Editor for OpenStreetMap* toolset, located in *System Toolboxes* in ArcGIS.
  1. ![Load OSM tool](https://raw.githubusercontent.com/GASCUK/OpenStreetMap-ArcGIS/master/Images/LoadOSMFile.png)
  2. Select the unzipped .osm file as the *Load OSM* parameter.
  3. Create a file geodatabase and name the *Target feature dataset* into which the OSM data will be loaded "planet" within this gdb.
