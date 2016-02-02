@@ -11,8 +11,8 @@ For a more detailed workflow showing exactly what happens at each step, see [WOR
 ###Downloading and processing the data
 
 1. Download the raw OSM data for the area of interest from [Geofabrik](http://download.geofabrik.de/). 
- 1. Whole continents can be downloaded if necessary but it is not recommended due to the time they take to process. If only a specific country is required then it is much more preferable to download just this data instead. (Note: For example, the whole of Africa took us over 7 days to download and process whereas Cyprus took less than a couple of hours).
- 2. Download the *.bz2 compressed OSM file and unzip. If this file is corrupt then download the *.pbf and use the openly available [OSMConvert](http://wiki.openstreetmap.org/wiki/Osmconvert) tool to convert the *.pbf to a *.osm file.
+ 1. Download the .bz2 compressed OSM file and unzip it. _(**Note:** If this file is corrupt then download the .pbf and use the openly available [OSMConvert](http://wiki.openstreetmap.org/wiki/Osmconvert) tool to convert the .pbf to a .osm file)_.
+ 3. Whole continents can be downloaded if necessary but it is not recommended due to the time they take to process. If only a specific country is required then it is much more preferable to download just this data instead. _(**Note:** For example, the whole of Africa took us over 7 days to download and process whereas Cyprus took less than a couple of hours)_.
 2. In ArcCatalog, open the [OpenStreetMap Models](https://github.com/GASCUK/OpenStreetMap-ArcGIS/tree/master/Models) toolbox and run the **Load OSM** model.
  1. ![Load OSM mode](https://raw.githubusercontent.com/GASCUK/OpenStreetMap-ArcGIS/master/Images/LoadOSMFileModel.png)
  2. Select the unzipped .osm file as the Load OSM parameter.
@@ -27,8 +27,8 @@ For a more detailed workflow showing exactly what happens at each step, see [WOR
 1. Add the [Natural Earth bathymetry data](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/Data/README.md) and the [OSM dissolved land polygon](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/Data/README.md) to the file geodatabase alongside the processed OSM data.
 
 ###Creating an MXD and displaying the processed data in ArcMap
-1. Open ArcMap and add the stylesheet. Customize > Style Manager > Styles... > Add Style to List...
+1. Open ArcMap and add the Humanitarian OSM [stylesheet](https://github.com/GASCUK/OpenStreetMap-ArcGIS/tree/master/Styles): *Customize > Style Manager > Styles... > Add Style to List...*
 2. Create a new blank MXD and load the [layers](https://github.com/GASCUK/OpenStreetMap-ArcGIS/tree/master/Layers).
-2. Arrange the layers in numerical order.
-3. Close ArcMap. Within ArcCatalog, set the MXD data source to the file geodatabase.
-4. Reopen the MXD in ArcMap to view the symbolised OSM data.
+3. Arrange the layers in numerical order.
+4. Close ArcMap. Within ArcCatalog, set the MXD data source to the file geodatabase where the processed OSM data has been loaded into.
+5. Reopen the MXD in ArcMap to view the symbolised OSM data.
