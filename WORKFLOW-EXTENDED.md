@@ -54,5 +54,5 @@ For a more simplified workflow using models created by us, see [WORKFLOW-SIMPLIF
 1. Open ArcMap and add the Humanitarian OSM [stylesheet](https://github.com/GASCUK/OpenStreetMap-ArcGIS/tree/master/Styles): *Customize > Style Manager > Styles... > Add Style to List...*
 2. Create a new blank MXD and load the [layers](https://github.com/GASCUK/OpenStreetMap-ArcGIS/tree/master/Layers).
 2. Arrange the layers in numerical order.
-3. Close ArcMap. Within ArcCatalog, set the MXD data source to the file geodatabase.
+3. Close ArcMap. Within ArcCatalog, set the MXD data source to the file geodatabase where the processed OSM data has been loaded into.
 4. Reopen the MXD in ArcMap to view the symbolised OSM data.
