@@ -24,7 +24,7 @@ Each layer file contains specific points, lines and polygon features to be displ
 
 The [stylesheet](https://github.com/GASCUK/OpenStreetMap-ArcGIS/tree/master/Styles), [layer files](https://github.com/GASCUK/OpenStreetMap-ArcGIS/tree/master/Layers), [basic bathymetry and land data](https://github.com/GASCUK/OpenStreetMap-ArcGIS/tree/master/Data), [raw OSM data](http://download.geofabrik.de/) and the [ArcGIS OSM toolbox](http://www.esri.com/software/arcgis/extensions/openstreetmap) are required to be able to display OSM data within ArcGIS in the style of the online OSM humanitarian theme.
 
-See [WORKFLOW-EXTENDED.md](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/WORKFLOW-EXTENDED.md) or [WORKFLOW-SIMPLIFIED](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/WORKFLOW-SIMPLIFIED.md) for more detailed information.
+See [WORKFLOW-EXTENDED.md](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/WORKFLOW-EXTENDED.md) or [WORKFLOW-SIMPLIFIED.md](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/WORKFLOW-SIMPLIFIED.md) for more detailed information.
 
 ## Maintainers
 
