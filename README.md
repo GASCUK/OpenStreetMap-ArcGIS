@@ -28,7 +28,7 @@ See [WORKFLOW-SIMPLIFIED.md](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob
 
 ## Troubleshooting
 
-See [TROUBLESHOOTING.md](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/Resources/TROUBLESHOOTING.md) for information on potential issues that may come up with the process and information on how to resolve them.
+See [TROUBLESHOOTING.md](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/Resources/TROUBLESHOOTING.md) for information on issues that may come up with the process and information on how to resolve them.
 
 ## Maintainers
 
