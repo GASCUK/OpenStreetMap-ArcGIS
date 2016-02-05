@@ -1,5 +1,5 @@
 ##Models
-A selection of useful models designed to speed up and simplify the method of processing OpenStreetMap data before displaying it in ArcMap, contained within a toolbox.
+A toolbox containing useful models designed to speed up and simplify the method of processing OpenStreetMap data before displaying it in ArcMap, contained within a toolbox.
 
 The individual processes are for each stage of the process of preparing raw OSM data for use in ArcMap. These are useful if you are processing large datasets,
 
