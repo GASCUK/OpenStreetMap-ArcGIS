@@ -31,9 +31,10 @@ There are two options to process the data using the [models](https://github.com/
     2. Select the unzipped .osm file as the *OSM input file*.
     3. Create a file geodatabase in your workspace and name the *Target feature dataset* "planet" in this gdb.
     4. Running this tool results in a feature dataset in the file gdb called planet containing three feature classes: planet_osm_ln, planet_osm_ply and planet_osm_pt.
- 2. In ArcCatalog, run the **OSM Attribute Selector** model in the [OpenStreetMap Models](https://github.com/GASCUK/OpenStreetMap-ArcGIS/tree/master/Models) to extract OSM keys from the tag collection and store them as standalone attributes.
+ 2. If a network dataset is required, see [NETWORK.md](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/Resources/NETWORK.md) for information on this step.
+ 3. In ArcCatalog, run the **OSM Attribute Selector** model in the [OpenStreetMap Models](https://github.com/GASCUK/OpenStreetMap-ArcGIS/tree/master/Models) to extract OSM keys from the tag collection and store them as standalone attributes.
     1. ![Load OSM mode](https://raw.githubusercontent.com/GASCUK/OpenStreetMap-ArcGIS/master/Images/OSMAttributeSelectorModel.png)
- 3. Create attribute indexes for all of the three feature classes within the planet feature dataset by running the **Add Index Attributes** model in the [OpenStreetMap Models](https://github.com/GASCUK/OpenStreetMap-ArcGIS/tree/master/Models).
+ 4. Create attribute indexes for all of the three feature classes within the planet feature dataset by running the **Add Index Attributes** model in the [OpenStreetMap Models](https://github.com/GASCUK/OpenStreetMap-ArcGIS/tree/master/Models).
     1. ![Load OSM mode](https://raw.githubusercontent.com/GASCUK/OpenStreetMap-ArcGIS/master/Images/AddOSMAttributeIndexesModel.png)
 
 ###Completing the data set
