@@ -24,7 +24,7 @@ Each layer file contains specific points, lines and polygon features to be displ
 
 The [stylesheet](https://github.com/GASCUK/OpenStreetMap-ArcGIS/tree/master/Styles), [layer files](https://github.com/GASCUK/OpenStreetMap-ArcGIS/tree/master/Layers), [basic bathymetry and land data](https://github.com/GASCUK/OpenStreetMap-ArcGIS/tree/master/Data), [raw OSM data](http://download.geofabrik.de/) and the [ArcGIS OSM toolbox](http://www.esri.com/software/arcgis/extensions/openstreetmap) are required to be able to display OSM data within ArcGIS in the style of the online OSM humanitarian theme.
 
-See [WORKFLOW-SIMPLIFIED.md](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/Resources/WORKFLOW-SIMPLIFIED.md) for a simplified version of the process or [WORKFLOW-EXTENDED.md](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/Resources/WORKFLOW-EXTENDED.md) for more detailed information on each step of the process. See [OSM_Workflow.pdf](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/Resources/OSM_Workflow.pdf) is a workflow diagram.
+See [WORKFLOW-SIMPLIFIED.md](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/Resources/WORKFLOW-SIMPLIFIED.md) for a simplified version of the process or [WORKFLOW-EXTENDED.md](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/Resources/WORKFLOW-EXTENDED.md) for more detailed information on each step of the process. See [OSM_Workflow.pdf](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/Resources/OSM_Workflow.pdf) for a workflow diagram.
 
 ## Troubleshooting
 
