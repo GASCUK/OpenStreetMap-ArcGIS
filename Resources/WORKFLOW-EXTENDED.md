@@ -50,7 +50,7 @@ For a more simplified workflow using [models](https://github.com/GASCUK/OpenStre
       * smoothness
       * surface
  5. Running this tool results in a feature dataset in the selected file gdb called planet containing three feature classes; planet_osm_ln, planet_osm_ply and planet_osm_pt.
-3. If a network dataset is required, follow [NETWORK.md](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/Resources/NETWORK.md).
+3. If a network dataset is required, see [NETWORK.md](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/Resources/NETWORK.md) for information on this step.
 4. In ArcCatalog, use the **OSM Attribute Selector** tool in the *ArcGIS Editor for OpenStreetMap* toolset on each of the three feature classes in turn to extract OSM keys from the tag collection and store them as standalone attributes.
  1. ![OSM Attribute Selector tool](https://raw.githubusercontent.com/GASCUK/OpenStreetMap-ArcGIS/master/Images/OSMAttributeSelector.png)
  2. Select 'EXISTING_TAG_FIELDS' in the *OSM Tag Keys* parameter and run the tool.
