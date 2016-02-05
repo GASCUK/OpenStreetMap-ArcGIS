@@ -4,16 +4,20 @@ This workflow is a detailed step by step guide to to display OSM data using the 
 
 For a more simplified workflow using [models](https://github.com/GASCUK/OpenStreetMap-ArcGIS/tree/master/Models), see [WORKFLOW-SIMPLIFIED.md](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/Resources/WORKFLOW-SIMPLIFIED.md).
 
-1. [Downloading and processing the data](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/Resources/WORKFLOW-EXTENDED.md#downloading-and-processing-the-data).
-2. [Completing the data set](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/Resources/WORKFLOW-EXTENDED.md#completing-the-data-set).
-3. [Creating an MXD and displaying the processed data in ArcMap](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/Resources/WORKFLOW-EXTENDED.md#creating-an-mxd-and-displaying-the-processed-data-in-arcmap).
+1. [Downloading the data](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/Resources/WORKFLOW-EXTENDED.md#downloading-and-processing-the-data).
+2. [Processing the data](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/Resources/WORKFLOW-EXTENDED.md#downloading-and-processing-the-data).
+3. [Completing the data set](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/Resources/WORKFLOW-EXTENDED.md#completing-the-data-set).
+4. [Creating an MXD and displaying the processed data in ArcMap](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/Resources/WORKFLOW-EXTENDED.md#creating-an-mxd-and-displaying-the-processed-data-in-arcmap).
 
-###Downloading and processing the data
+###Downloading the data
 
 1. Download the raw OSM data for the area of interest from [Geofabrik](http://download.geofabrik.de/). 
  1. Download the .bz2 compressed OSM file. _(**Note 1:** Whole continents can be downloaded if necessary but it is not recommended due to the time they take to process. If only a specific country is required then it is much more preferable to download just this data instead. **Note 2:** If the .bz2 file is corrupt then download the .pbf and use the openly available [OSMConvert](http://wiki.openstreetmap.org/wiki/Osmconvert) tool to convert the .pbf to a .osm file)_.
  2. Unzip the .bz2 file.
-2. In ArcCatalog, load the .osm file using the **Load OSM** tool in the *ArcGIS Editor for OpenStreetMap* toolset, located in *System Toolboxes* in ArcGIS.
+
+###Processing the data
+
+1. In ArcCatalog, load the .osm file using the **Load OSM** tool in the *ArcGIS Editor for OpenStreetMap* toolset, located in *System Toolboxes* in ArcGIS.
  1. ![Load OSM tool](https://raw.githubusercontent.com/GASCUK/OpenStreetMap-ArcGIS/master/Images/LoadOSMFile.png)
  2. Select the unzipped .osm file in *Load OSM*.
  3. Create a file geodatabase and name the *Target feature dataset* into which the OSM data will be loaded "planet" within this gdb.
