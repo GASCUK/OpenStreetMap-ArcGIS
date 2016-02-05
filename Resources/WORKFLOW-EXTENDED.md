@@ -4,6 +4,8 @@ This workflow is a detailed step by step guide to to display OSM data using the 
 
 For a more simplified workflow using [models](https://github.com/GASCUK/OpenStreetMap-ArcGIS/tree/master/Models), see [WORKFLOW-SIMPLIFIED.md](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/Resources/WORKFLOW-SIMPLIFIED.md).
 
+See [OSM_Workflow.pdf](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/Resources/OSM_Workflow.pdf) for a diagram of the workflow to aid the process.
+
 1. [Downloading the data](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/Resources/WORKFLOW-EXTENDED.md#downloading-the-data).
 2. [Processing the data](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/Resources/WORKFLOW-EXTENDED.md#processing-the-data).
 3. [Completing the data set](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/Resources/WORKFLOW-EXTENDED.md#completing-the-data-set).
