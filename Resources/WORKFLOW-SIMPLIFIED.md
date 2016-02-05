@@ -17,6 +17,7 @@ For a more detailed workflow showing exactly what happens at each step, see [WOR
 
 ###Processing the data
 There are two options to process the data using the [models](https://github.com/GASCUK/OpenStreetMap-ArcGIS/tree/master/Models) in this repository:
+
 1. **Complete process model:**
   1. In ArcCatalog, open the [OpenStreetMap Models](https://github.com/GASCUK/OpenStreetMap-ArcGIS/tree/master/Models) toolbox and run the **Complete OSM Process** model.
   2. ![Complete OSM Load Process model](https://raw.githubusercontent.com/GASCUK/OpenStreetMap-ArcGIS/master/Images/CompleteOSMLoadProcess.png)
