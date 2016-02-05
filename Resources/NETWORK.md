@@ -1,41 +1,26 @@
-##OpenStreetMap for ArcGIS
-![OSM](https://raw.githubusercontent.com/GASCUK/OpenStreetMap-ArcGIS/master/Images/osm_banner.png)
+##Create a Network Dataset from OSM Data
 
-##Introduction
+A Network Dataset is a dataset that describes the travelling of an agent (e.g., pedestrian, truck driver, cyclist, etc.) along a route. Analyses such as the quickest route between two points, the area of service for a business, what barriers are in the path of a specific route, and more are possible when working with a network dataset. ArcGIS provides tools for such analysis through the Network Analyst extension.
 
-This repository provides a means to style OpenStreetMap data imported into ArcGIS using the [OpenStreetMap Editor for ArcGIS](http://www.esri.com/software/arcgis/extensions/openstreetmap).
+This workflow describes how to use the *ArcGIS Editor for OpenStreetMap* toolsets **Create OSM Network Dataset** tool to create a network dataset from OSM data.
 
-The stylesheet and layers included in the repository have been designed to simplify the process of symbolising and displaying OSM data. The style design is based on the [OpenStreetMap](http://openstreetmap.org/) humanitarian theme. The original style information can be found at [HDM-CartoCSS](https://github.com/hotosm/HDM-CartoCSS) and is derived from [CartoCSS](https://github.com/mapbox/carto).
+_**Note:** The network will only be as good as the underlying data. Some areas do not have adequate information to facilitate creating a useful network dataset._
 
-##Description
+###Verify that the Network Analyst extension is checked
 
-The style file contains symbols for four distinct scale levels. Each zoom level groups one or more of the display levels from OpenStreetMap:
+The **Create OSM Network Dataset** tool leverages functionality native to the Network Analyst extension. This must be turned on to run the tool successfully. To turn it on, click the "Customize" menu at the top of ArcMap, and select the "Extensions" submenu, then verify that there is a check next to the Network Analyst extension.
 
-1. Display levels 0-10
-2. Display levels 11-12
-3. Display levels 13-15
-4. Display levels 16-19
+###Acquire an OSM feature dataset
 
-Each layer file contains specific points, lines and polygon features to be displayed at each level. This information was drawn from the CartoCSS MSS files for the OSM humanitarian theme. The features displayed at each level draw their symbology from the stylesheet created based on the Nori and Maki icons, designed to look as similiar to the OSM humanitarian symbols as possible.
+Follow the processes detailed in [WORKFLOW-EXTENDED.md]() or [WORKFLOW-SIMPLIFIED.md]() to download a .osm file and load it as a feature dataset.
 
-**_Note:_** *There are currently no labels included in the template as the speed that the layers take to display is currently being tested. In future, country and captial city labels may be included but more detailed labelling such as rivers and roads will probably not be added. The information for the labelling, such as feature names, is included in the OSM attributes so it is possible to create labels for projects individually in the meanwhile.*
+###Use the Create OSM Network Dataset tool
 
-## Workflow
+After acquiring a feature dataset from OSM, and a Network Configuration file, run the **Create OSM Network Dataset** tool. Browse to the tool in the *ArcGIS Editor for OpenStreetMap* toolset, located in the *System Toolboxes*, and double click to launch it.
 
-The [stylesheet](https://github.com/GASCUK/OpenStreetMap-ArcGIS/tree/master/Styles), [layer files](https://github.com/GASCUK/OpenStreetMap-ArcGIS/tree/master/Layers), [basic bathymetry and land data](https://github.com/GASCUK/OpenStreetMap-ArcGIS/tree/master/Data), [raw OSM data](http://download.geofabrik.de/) and the [ArcGIS OSM toolbox](http://www.esri.com/software/arcgis/extensions/openstreetmap) are required to be able to display OSM data within ArcGIS in the style of the online OSM humanitarian theme.
+Fill in the parameters as described below:
 
-See [WORKFLOW-EXTENDED.md](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/WORKFLOW-EXTENDED.md) or [WORKFLOW-SIMPLIFIED](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/WORKFLOW-SIMPLIFIED.md) for more detailed information.
-
-## Maintainers
-
-- GASC [@gascuk](https://github.com/gascuk)
-- Dave Barrett [@daveb1034](https://github.com/daveb1034)
-- Rachel Munslow [@rmunslow](https://github.com/rmunslow)
-
-##License
-
-The following copyrights should be noted and referenced when creating any maps utilising these styles:
-
-- Stylesheet is licenced under CCO.
-- Nori icons are licenced under CCO.
-- Maki icons are © [MapBox](https://www.mapbox.com/maki/).
+Input OSM Feature Dataset: Browse to your OSM Feature Dataset.
+Network Configuration File: The Network Configuration File defines the rules for generating your network dataset from the OSM data. The way you will use your network will determine which config file you use - and how you might want to adjust it to better suit your needs. For example, a riverbank can be a barrier if you’re defining a road network, or it can be a thoroughfare if you’re doing ship navigation. There is no automatic way to set these rules, but the OpenStreetMap toolbox contains network configuration sample files you can use to get started. Alternatively, if you want to generate a configuration file from scratch, see Generate a custom Network Configuration File Script. When you're first getting familiar with this tool, we recommend you use the configuration file that come with the OpenStreetMap toolbox. Browse to them from this Network Configuration File field in the tool dialog:{"\ArcGIS\Desktop10.1\ArcToolbox\Toolboxes\ND_ConfigFiles"} Which file you use depends on your use case - use CycleGeneric.xml for bicycle routing, DriveGeneric.xml for automobile routing regardless of spatial reference, or DriveMeters.xml for automobile routing in meters (e.g., NOTE: if the spatial reference of your osm feature dataset has a linear unit of meters; will result in faster routing performance. Will not work if linear unit is not meters).
+Output Network Dataset: This field will auto-populate after the first parameter is filled in, and is the name of the network dataset that will be created.
+Important: After running this tool, your OSM feature dataset will be transformed into a Network dataset. You will be able to use all the functionality available for ArcGIS Network Datasets with your resulting network dataset. Your new network dataset will also include feature classes for barriers, turns, junctions, and roads. After generating the network dataset, you can use the ArcGIS Network Analyst extension tools to work with the dataset. The OSM-specific tools in the OpenStreetMap Toolbox can be used on your source data, but not on the resulting network dataset.
