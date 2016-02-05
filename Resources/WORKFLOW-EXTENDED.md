@@ -15,7 +15,7 @@ For a more simplified workflow using [models](https://github.com/GASCUK/OpenStre
  2. Unzip the .bz2 file.
 2. In ArcCatalog, load the .osm file using the **Load OSM** tool in the *ArcGIS Editor for OpenStreetMap* toolset, located in *System Toolboxes* in ArcGIS.
  1. ![Load OSM tool](https://raw.githubusercontent.com/GASCUK/OpenStreetMap-ArcGIS/master/Images/LoadOSMFile.png)
- 2. Select the unzipped .osm file as the *Load OSM* parameter.
+ 2. Select the unzipped .osm file in *Load OSM*.
  3. Create a file geodatabase and name the *Target feature dataset* into which the OSM data will be loaded "planet" within this gdb.
  4. Expand the optional *Adjust Input Schema* parameter and add the required OSM tag keys to schema:
     * admin_level
