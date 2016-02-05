@@ -25,3 +25,5 @@ Fill in the parameters as described below:
 4. *Output Network Dataset:* This field will auto-populate after the first parameter is filled in, and is the name of the network dataset that will be created.
 
 After running this tool, the OSM feature dataset will be transformed into a Network dataset. All the functionality available for ArcGIS Network Datasets can be used with the resulting network dataset. The new network dataset will also include feature classes for barriers, turns, junctions, and roads. After generating the network dataset, the ArcGIS Network Analyst extension tools can be used to work with the dataset. The OSM-specific tools in the OpenStreetMap Toolbox can be used on the source data, but not on the resulting network dataset.
+
+Edited from Esri's [arcgis-osm-editor wiki](https://github.com/Esri/arcgis-osm-editor/wiki/Create-a-network-dataset-from-osm-data).
