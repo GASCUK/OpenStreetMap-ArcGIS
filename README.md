@@ -20,11 +20,15 @@ Each layer file contains specific points, lines and polygon features to be displ
 
 **_Note:_** *There are currently no labels included in the template as the speed that the layers take to display is currently being tested. In future, country and captial city labels may be included but more detailed labelling such as rivers and roads will probably not be added. The information for the labelling, such as feature names, is included in the OSM attributes so it is possible to create labels for projects individually in the meanwhile.*
 
-## Workflow
+## Workflows
 
 The [stylesheet](https://github.com/GASCUK/OpenStreetMap-ArcGIS/tree/master/Styles), [layer files](https://github.com/GASCUK/OpenStreetMap-ArcGIS/tree/master/Layers), [basic bathymetry and land data](https://github.com/GASCUK/OpenStreetMap-ArcGIS/tree/master/Data), [raw OSM data](http://download.geofabrik.de/) and the [ArcGIS OSM toolbox](http://www.esri.com/software/arcgis/extensions/openstreetmap) are required to be able to display OSM data within ArcGIS in the style of the online OSM humanitarian theme.
 
-See [WORKFLOW-EXTENDED.md](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/WORKFLOW-EXTENDED.md) or [WORKFLOW-SIMPLIFIED.md](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/WORKFLOW-SIMPLIFIED.md) for more detailed information.
+See [WORKFLOW-SIMPLIFIED.md](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/Resources/WORKFLOW-SIMPLIFIED.md) for a simplified version of the workflow or [WORKFLOW-EXTENDED.md](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/Resources/WORKFLOW-EXTENDED.md) for more detailed information on each step of the process.
+
+## Troubleshooting
+
+See [TROUBLESHOOTING.md](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/master/Resources/TROUBLESHOOTING.md) for information on potential issues that may come up with the process and information on how to resolve them.
 
 ## Maintainers
 
