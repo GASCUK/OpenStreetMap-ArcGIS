@@ -11,7 +11,7 @@ For a more simplified workflow using [models](https://github.com/GASCUK/OpenStre
 ###Downloading and processing the data
 
 1. Download the raw OSM data for the area of interest from [Geofabrik](http://download.geofabrik.de/). 
- 1. Download the .bz2 compressed OSM file. _(**Note 1:** Whole continents can be downloaded if necessary but it is not recommended due to the time they take to process. If only a specific country is required then it is much more preferable to download just this data instead. **Note 2:** If this file is corrupt then download the .pbf and use the openly available [OSMConvert](http://wiki.openstreetmap.org/wiki/Osmconvert) tool to convert the .pbf to a .osm file)_.
+ 1. Download the .bz2 compressed OSM file. _(**Note 1:** Whole continents can be downloaded if necessary but it is not recommended due to the time they take to process. If only a specific country is required then it is much more preferable to download just this data instead. **Note 2:** If the .bz2 file is corrupt then download the .pbf and use the openly available [OSMConvert](http://wiki.openstreetmap.org/wiki/Osmconvert) tool to convert the .pbf to a .osm file)_.
  2. Unzip the .bz2 file.
 2. In ArcCatalog, load the .osm file using the **Load OSM** tool in the *ArcGIS Editor for OpenStreetMap* toolset, located in *System Toolboxes* in ArcGIS.
  1. ![Load OSM tool](https://raw.githubusercontent.com/GASCUK/OpenStreetMap-ArcGIS/master/Images/LoadOSMFile.png)
