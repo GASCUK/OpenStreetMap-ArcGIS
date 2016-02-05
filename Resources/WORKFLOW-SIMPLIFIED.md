@@ -16,7 +16,7 @@ For a more detailed workflow showing exactly what happens at each step, see [WOR
  2. Unzip the .bz2 file.
 
 ###Processing the data
-There are two options to process the data using the [models](https://github.com/GASCUK/OpenStreetMap-ArcGIS/tree/master/Models) in this repository:
+There are two options to process the data using the [models](https://github.com/GASCUK/OpenStreetMap-ArcGIS/tree/master/Models) in this repository. The complete process model runs through the entire process in one model. The individual models give the user a bit more control over each stage by running them individually whilst still removing the requirement for the user to enter detailed parameters such as tags to add to the schema:
 
 1. **Complete process model:**
   1. In ArcCatalog, open the [OpenStreetMap Models](https://github.com/GASCUK/OpenStreetMap-ArcGIS/tree/master/Models) toolbox and run the **Complete OSM Process** model.
