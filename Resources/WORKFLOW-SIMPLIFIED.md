@@ -17,6 +17,8 @@ For a more detailed workflow showing exactly what happens at each step, see [WOR
 
 ###Processing the data
 There are two options to process the data using the [models](https://github.com/GASCUK/OpenStreetMap-ArcGIS/tree/master/Models) in this repository:
+
+####Option 1
 1. Complete OSM Process model:
   1. In ArcCatalog, open the [OpenStreetMap Models](https://github.com/GASCUK/OpenStreetMap-ArcGIS/tree/master/Models) toolbox and run the **Complete OSM Process** model.
   2. ![Complete OSM Load Process model](https://raw.githubusercontent.com/GASCUK/OpenStreetMap-ArcGIS/master/Images/CompleteOSMLoadProcess.png)
@@ -25,6 +27,7 @@ There are two options to process the data using the [models](https://github.com/
   5. Select the *Network configuration file* for the creation of the network dataset. This will default to the DriveGeneric.xml. If a network dataset is not required, leave this as default, do not delete input.
   6. Select whether to *Create OSM network dataset*.
 
+####Option 2
 2. Individual processes models:
   1. In ArcCatalog, open the [OpenStreetMap Models](https://github.com/GASCUK/OpenStreetMap-ArcGIS/tree/master/Models) toolbox and run the **Load OSM** model.
     1. ![Load OSM mode](https://raw.githubusercontent.com/GASCUK/OpenStreetMap-ArcGIS/master/Images/LoadOSMFileModel.png)
