@@ -20,14 +20,16 @@ There are two options to process the data using the [models](https://github.com/
 1. Complete OSM Process model:
   1. In ArcCatalog, open the [OpenStreetMap Models](https://github.com/GASCUK/OpenStreetMap-ArcGIS/tree/master/Models) toolbox and run the **Complete OSM Process** model.
   2. ![Complete OSM Load Process model](https://raw.githubusercontent.com/GASCUK/OpenStreetMap-ArcGIS/master/Images/CompleteOSMLoadProcess.png)
-  3. 
-
+  3. Select the unzipped .osm file as the *OSM input file*.
+  4. Create a file geodatabase in your workspace and name the *Target feature dataset* "planet" in this gdb.
+  5. Select the *Network configuration file* for the creation of the network dataset. This will default to the DriveGeneric.xml. If a network dataset is not required, leave this as default, do not delete input.
+  6. Select whether to *Create OSM network dataset*.
 
 2. Individual processes models:
   1. In ArcCatalog, open the [OpenStreetMap Models](https://github.com/GASCUK/OpenStreetMap-ArcGIS/tree/master/Models) toolbox and run the **Load OSM** model.
     1. ![Load OSM mode](https://raw.githubusercontent.com/GASCUK/OpenStreetMap-ArcGIS/master/Images/LoadOSMFileModel.png)
-    2. Select the unzipped .osm file as the Load OSM parameter.
-    3. Create a file geodatabase in your workspace and name the Target feature dataset "planet" in this gdb.
+    2. Select the unzipped .osm file as the *OSM input file*.
+    3. Create a file geodatabase in your workspace and name the *Target feature dataset* "planet" in this gdb.
     4. Running this tool results in a feature dataset in the file gdb called planet containing three feature classes: planet_osm_ln, planet_osm_ply and planet_osm_pt.
  2. In ArcCatalog, run the **OSM Attribute Selector** model in the [OpenStreetMap Models](https://github.com/GASCUK/OpenStreetMap-ArcGIS/tree/master/Models) to extract OSM keys from the tag collection and store them as standalone attributes.
     1. ![Load OSM mode](https://raw.githubusercontent.com/GASCUK/OpenStreetMap-ArcGIS/master/Images/OSMAttributeSelectorModel.png)
