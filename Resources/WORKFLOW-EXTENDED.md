@@ -14,7 +14,7 @@ See [OSM_Workflow.pdf](https://github.com/GASCUK/OpenStreetMap-ArcGIS/blob/maste
 ###Downloading the data
 
 1. Download the raw OSM data for the area of interest from [Geofabrik](http://download.geofabrik.de/). 
- 1. Download the .bz2 compressed OSM file. _(**Note 1:** Important: The OSM world dataset is so large now that the file geodatabase model is insufficient to store the planet dataset. Therefore, it is recommended that you load the smallest .osm file that meets your needs. **Note 2:** If the .bz2 file is corrupt then download the .pbf and use the openly available [OSMConvert](http://wiki.openstreetmap.org/wiki/Osmconvert) tool to convert the .pbf to a .osm file.)_.
+ 1. Download the .bz2 compressed OSM file. _(**Note 1:** The OSM world dataset is so large now that the file geodatabase model is insufficient to store the planet dataset. Therefore, it is recommended that you load the smallest .osm file that meets your needs. **Note 2:** If the .bz2 file is corrupt then download the .pbf and use the openly available [OSMConvert](http://wiki.openstreetmap.org/wiki/Osmconvert) tool to convert the .pbf to a .osm file.)_.
  2. Unzip the .bz2 file.
 
 ###Processing the data
