@@ -1,5 +1,5 @@
 ##OpenStreetMap for ArcGIS
-![OSM](https://raw.githubusercontent.com/GASCUK/OpenStreetMap-ArcGIS/master/Images/osm_banner.png)
+![OSM](https://raw.githubusercontent.com/GASCUK/OpenStreetMap-ArcGIS/master/Images/osm_banner_small.png)
 
 ##Introduction
 
