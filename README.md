@@ -12,4 +12,4 @@ found at [HDM-CartoCSS](https://github.com/hotosm/HDM-CartoCSS) and is derived f
 
 ###Documentation
 
-Use the [documentation](GASCUK.github.io) for getting started and guidance on the process. Please help make the documentation better by contributing over at the documentation repo.
+Use the [documentation](http://gascuk.github.io/OpenStreetMap-ArcGIS/) for getting started and guidance on the process. Please help make the documentation better by contributing to the [documentation repo](https://github.com/GASCUK/OpenStreetMap-ArcGIS-docs).
