@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+
+	<title>Network - OpenStreetMap for ArcGIS</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../..">OpenStreetMap for ArcGIS</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">Home</a>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Workflow <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../simplified/">Simplified workflow</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../extended/">Extended workflow</a>
+                        </li>
+                    
+                        <li class="active">
+                            <a href="./">Network</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../troubleshooting/">Troubleshooting</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Download <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../download/toolbox/">Toolbox</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../download/styles/">Styles</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../download/layers/">Layers</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../download/data/">Data</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../about/licence/">Licence</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../about/releasenotes/">Release Notes</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li >
+                    <a rel="next" href="../extended/">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../troubleshooting/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://github.com/GASCUK/OpenStreetMap-ArcGIS">
+                        
+                            <i class="fa fa-github"></i>
+                        
+                        GitHub
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#creating-a-network-dataset-from-osm-data">Creating a Network Dataset from OSM Data</a></li>
+        
+            <li><a href="#verify-that-the-network-analyst-extension-is-checked">Verify that the Network Analyst extension is checked</a></li>
+        
+            <li><a href="#acquire-an-osm-feature-dataset">Acquire an OSM feature dataset</a></li>
+        
+            <li><a href="#use-the-create-osm-network-dataset-tool">Use the Create OSM Network Dataset tool</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h2 id="creating-a-network-dataset-from-osm-data">Creating a Network Dataset from OSM Data</h2>
+<p>A Network Dataset is a dataset that describes the travelling of an agent (e.g., pedestrian, truck driver, cyclist, etc.) along a route. Analyses such as the 
+quickest route between two points, the area of service for a business, what barriers are in the path of a specific route, and more are possible when working 
+with a network dataset. ArcGIS provides tools for such analysis through the Network Analyst extension.</p>
+<p>This workflow describes how to use the <em>ArcGIS Editor for OpenStreetMap</em> toolsets <strong>Create OSM Network Dataset</strong> tool to create a network dataset from OSM data.</p>
+<p><em><strong>Note:</strong> The network will only be as good as the underlying data. Some areas do not have adequate information to facilitate creating a useful network dataset.</em></p>
+<h3 id="verify-that-the-network-analyst-extension-is-checked">Verify that the Network Analyst extension is checked</h3>
+<p>The <strong>Create OSM Network Dataset</strong> tool leverages functionality native to the Network Analyst extension. This must be turned on to run the tool successfully. 
+To turn it on, click the "Customize" menu at the top of ArcMap, and select the "Extensions" submenu, then verify that there is a check next to the Network 
+Analyst extension.</p>
+<h3 id="acquire-an-osm-feature-dataset">Acquire an OSM feature dataset</h3>
+<p>Follow the processes detailed in the <a href="../extended/">extended</a> or <a href="../simplified/">simplified</a> workflows to download a .osm file and load it as a feature dataset.</p>
+<h3 id="use-the-create-osm-network-dataset-tool">Use the Create OSM Network Dataset tool</h3>
+<p>After acquiring a feature dataset from OSM, and a Network Configuration file, run the <strong>Create OSM Network Dataset</strong> tool. Browse to the tool in the <em>ArcGIS Editor for OpenStreetMap</em> toolset, located in the <em>System Toolboxes</em>, and double click to launch it.</p>
+<p>Fill in the parameters as described below:</p>
+<ol>
+<li>
+<p><em>Input OSM Feature Dataset:</em> Browse to the created OSM feature dataset.</p>
+</li>
+<li>
+<p><em>Network Configuration File:</em> The Network Configuration File defines the rules for generating the network dataset from the OSM data. The way the network 
+will be used will determine which config file to use and how to adjust it to better suit ythe requirement. For example, a riverbank can be a barrier if defining 
+a road network, or it can be a thoroughfare if doing ship navigation. There is no automatic way to set these rules, but the OpenStreetMap toolbox contains 
+network configuration sample files can be used to get started. Alternatively, a configuration file can be created from scratch. The OpenStreetMap network 
+configuration sample files can be found at {"\ArcGIS\Desktop10.1\ArcToolbox\Toolboxes\ND_ConfigFiles"}. Use CycleGeneric.xml for bicycle routing, 
+DriveGeneric.xml for automobile routing regardless of spatial reference, or DriveMeters.xml for automobile routing in metres. <em>(<strong>Note:</strong>  If the spatial 
+reference of the osm feature dataset has a linear unit of metres; it will result in faster routing performance. It will not work if linear unit is not metres)</em>.</p>
+</li>
+<li>
+<p><em>Output Network Dataset:</em> This field will auto-populate after the first parameter is filled in, and is the name of the network dataset that will be created.</p>
+</li>
+</ol>
+<p>After running this tool, the OSM feature dataset will be transformed into a Network dataset. All the functionality available for ArcGIS Network Datasets can 
+be used with the resulting network dataset. The new network dataset will also include feature classes for barriers, turns, junctions, and roads. After 
+generating the network dataset, the ArcGIS Network Analyst extension tools can be used to work with the dataset.</p>
+<p>Edited from Esri's <a href="https://github.com/Esri/arcgis-osm-editor/wiki/Create-a-network-dataset-from-osm-data">arcgis-osm-editor wiki</a>.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script src="../../js/base.js"></script>
+    </body>
+</html>
