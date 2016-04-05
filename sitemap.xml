@@ -40,6 +40,12 @@
     
         
     <url>
+     <loc>None/download/editor/</loc>
+     <lastmod>2016-04-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
      <loc>None/download/toolbox/</loc>
      <lastmod>2016-04-05</lastmod>
      <changefreq>daily</changefreq>

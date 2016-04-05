@@ -9,7 +9,7 @@
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
 
-	<title>Simplified workflow - OpenStreetMap for ArcGIS</title>
+	<title>OpenStreetMap Editor - OpenStreetMap for ArcGIS</title>
 
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -56,24 +56,24 @@
             
             
             
-                <li class="dropdown active">
+                <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Workflow <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
-                        <li class="active">
-                            <a href="./">Simplified workflow</a>
+                        <li >
+                            <a href="../../workflows/simplified/">Simplified workflow</a>
                         </li>
                     
                         <li >
-                            <a href="../extended/">Extended workflow</a>
+                            <a href="../../workflows/extended/">Extended workflow</a>
                         </li>
                     
                         <li >
-                            <a href="../network/">Network</a>
+                            <a href="../../workflows/network/">Network</a>
                         </li>
                     
                         <li >
-                            <a href="../troubleshooting/">Troubleshooting</a>
+                            <a href="../../workflows/troubleshooting/">Troubleshooting</a>
                         </li>
                     
                     </ul>
@@ -81,28 +81,28 @@
             
             
             
-                <li class="dropdown">
+                <li class="dropdown active">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Download <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
-                        <li >
-                            <a href="../../download/editor/">OpenStreetMap Editor</a>
+                        <li class="active">
+                            <a href="./">OpenStreetMap Editor</a>
                         </li>
                     
                         <li >
-                            <a href="../../download/toolbox/">Toolbox</a>
+                            <a href="../toolbox/">Toolbox</a>
                         </li>
                     
                         <li >
-                            <a href="../../download/styles/">Styles</a>
+                            <a href="../styles/">Styles</a>
                         </li>
                     
                         <li >
-                            <a href="../../download/layers/">Layers</a>
+                            <a href="../layers/">Layers</a>
                         </li>
                     
                         <li >
-                            <a href="../../download/data/">Data</a>
+                            <a href="../data/">Data</a>
                         </li>
                     
                     </ul>
@@ -131,12 +131,12 @@
             <!-- Search, Navigation and Repo links -->
             <ul class="nav navbar-nav navbar-right">
                 <li >
-                    <a rel="next" href="../..">
+                    <a rel="next" href="../../workflows/troubleshooting/">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="../extended/">
+                    <a rel="prev" href="../toolbox/">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -159,98 +159,27 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#simplified-workflow">Simplified workflow</a></li>
+        <li class="main active"><a href="#openstreetmap-editor-for-arcgis">OpenStreetMap Editor for ArcGIS</a></li>
         
-            <li><a href="#downloading-the-data">Downloading the data</a></li>
-        
-            <li><a href="#processing-the-data">Processing the data</a></li>
-        
-            <li><a href="#completing-the-data-set">Completing the data set</a></li>
-        
-            <li><a href="#displaying-the-data-in-arcmap">Displaying the data in ArcMap</a></li>
+    
+        <li class="main "><a href="#download">Download</a></li>
         
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h2 id="simplified-workflow">Simplified workflow</h2>
-<p>This workflow is a simplified step by step guide to to display OpenStreetMap (OSM) data using the layers and stylesheet provided in this repository. It is 
-designed to optimise the speed at which the data is processed and displayed in ArcGIS. It uses a custom built model based on the OpenStreetMap Editor for 
-ArcGIS tools with a number of the required parameters, such as tag names, preprogrammed to aid the user in the process.</p>
-<p>For a more detailed workflow showing exactly what happens at each step, see the <a href="../extended/">extended workflow</a>.</p>
-<h3 id="downloading-the-data">Downloading the data</h3>
-<ol>
-<li>
-<p>Download the raw OSM data for the area of interest from <a href="http://download.geofabrik.de/">Geofabrik</a>:</p>
-<ol>
-<li>
-<p>Download the .bz2 compressed OSM file.</p>
-</li>
-<li>
-<p>Unzip the .bz2 file.</p>
-</li>
-</ol>
-</li>
-</ol>
-<p><em><strong>Important:</strong> The OSM world dataset is so large now that the file geodatabase model is insufficient to store the planet dataset. Smaller geographies - 
-continents, countries - are OK. Therefore, it is recommended that you load the smallest .osm file that meets your needs.</em></p>
-<h3 id="processing-the-data">Processing the data</h3>
-<p>The simplified workflow uses the <strong>Complete Load OSM Process</strong> model, in the <a href="../../download/toolbox/">toolbox</a> in this repository. The model loads and 
-processes the data with minimal input from the user.</p>
-<ol>
-<li>
-<p><strong>Complete Load OSM Process model:</strong></p>
-<ol>
-<li>
-<p>Download the <a href="../../download/toolbox/">OpenStreetMap Models</a> toolbox. Unzip it and locate the unzipped folder in ArcCatalog.</p>
-</li>
-<li>
-<p>Run the <strong>Complete OSM Load Process</strong> model:
-<img alt="Complete OSM Load Process model" src="https://raw.githubusercontent.com/GASCUK/OpenStreetMap-ArcGIS/master/Images/CompleteOSMLoadProcess.png" /></p>
-</li>
-<li>
-<p>Select the unzipped .osm file as the <em>OSM input file</em>.</p>
-</li>
-<li>
-<p>Create a file geodatabase in your workspace and name the <em>Target feature dataset</em> witin it "planet".</p>
-</li>
-<li>
-<p>Select the <em>Network configuration file</em> for the creation of the network dataset. This will default to a OpenStreetMap sample file (DriveGeneric.xml).
-Click <a href="../network/">here</a> for more information on network configuration files.</p>
-</li>
-<li>
-<p>Select whether to <em>Create OSM network dataset</em> by checking or unchecking the box.</p>
-</li>
-</ol>
-</li>
-</ol>
-<h3 id="completing-the-data-set">Completing the data set</h3>
-<ol>
-<li>Add the <a href="../../download/data/">Natural Earth bathymetry data</a> and the <a href="../../download/data/">OSM dissolved land polygon</a> to the file geodatabase alongside 
-the processed OSM data.</li>
-</ol>
-<h3 id="displaying-the-data-in-arcmap">Displaying the data in ArcMap</h3>
-<ol>
-<li>
-<p>Download the Humanitarian OSM <a href="../../download/styles/">stylesheet</a>.</p>
-</li>
-<li>
-<p>Open ArcMap and add the stylesheet: <em>Customize &gt; Style Manager &gt; Styles... &gt; Add Style to List...</em></p>
-</li>
-<li>
-<p>Download and unzip the <a href="../../download/layers/">layers</a> and add them to a new, blank MXD.</p>
-</li>
-<li>
-<p>Arrange the layers in numerical order with the land and bathymetry layers at the bottom of the list:</p>
-</li>
-<li>
-<p>Close ArcMap. Open ArcCatalog and set the MXD data source to the file geodatabase containing the processed OSM data.</p>
-</li>
-<li>
-<p>Reopen the MXD in ArcMap to view the symbolised OSM data.</p>
-</li>
-</ol></div>
+<h2 id="openstreetmap-editor-for-arcgis">OpenStreetMap Editor for ArcGIS</h2>
+<p>It is vital that the correct version of the ArcGIS Editor for OSM is downloaded and installed. Without it 
+none of the tools created by the GASC will work rendering the whole process detailed in the workflows useless.</p>
+<h2 id="download">Download</h2>
+<ul>
+<li>ArcGIS Editor for OSM, 10.3.x Desktop &gt;&gt; <a href="http://www.arcgis.com/home/item.html?id=75716d933f1c40a784243198e0dc11a1">Download here</a>.</li>
+<li>ArcGIS Editor for OSM, 10.2.x Desktop &gt;&gt; <a href="http://www.arcgis.com/home/item.html?id=16970017f81349548d0a9eead0ebba39">Download here</a>.</li>
+<li>ArcGIS Editor for OSM, 10.1.x Desktop &gt;&gt; Although this is available for download on the Esri website the toolbox is out of date and 
+will not work with the GASC tools. Please <a href="mailto:gascuk@gmail.com">contact us</a> and 
+we will send over a customised version of the 10.3.x toolbox that works on 10.1.x.</li>
+</ul></div>
         </div>
 
         <footer class="col-md-12">
