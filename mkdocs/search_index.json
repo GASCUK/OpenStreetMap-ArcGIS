@@ -97,23 +97,23 @@
         }, 
         {
             "location": "/download/styles/", 
-            "text": "Styles\n\n\nThe style file has been built using ArcGIS for Desktop 10.1 and includes all the style information needed to display OSM data within the ArcGIS software in \nthe style of the humanitarian theme.\n\n\nThe stylesheet contains the symbols for the points, lines and polygons to be displayed, as well as the styles for labelling. There are currently no labels \nincluded in the template layers, however these styles will enable the creation of labels for individual projects in the style of OSM.\n\n\nFurther style updates will be added as the project progresses. Icons will be added to the style file for attributes not currently displayed on the \nhumanitarian OSM.\n\n\nThe styles are designed based on the \nOpenStreetMap\n humanitarian theme. The original style information can be found at \n\nHDM-CartoCSS\n and is derived from \nCartoCSS\n.\n\n\nDownload \n \nhere\n.", 
+            "text": "Stylesheet\n\n\nThe style file has been built using ArcGIS for Desktop 10.1 and includes all the style information needed to display OSM data within the ArcGIS software in \nthe style of the humanitarian theme.\n\n\nThe stylesheet contains the symbols for the points, lines and polygons to be displayed, as well as the styles for labelling. There are currently no labels \nincluded in the template layers, however these styles will enable the creation of labels for individual projects in the style of OSM.\n\n\nFurther style updates will be added as the project progresses. Icons will be added to the style file for attributes not currently displayed on the \nhumanitarian OSM.\n\n\nThe styles are designed based on the \nOpenStreetMap\n humanitarian theme. The original style information can be found at \n\nHDM-CartoCSS\n and is derived from \nCartoCSS\n.\n\n\nDownload \n \nhere\n.", 
             "title": "Styles"
         }, 
         {
-            "location": "/download/styles/#styles", 
+            "location": "/download/styles/#stylesheet", 
             "text": "The style file has been built using ArcGIS for Desktop 10.1 and includes all the style information needed to display OSM data within the ArcGIS software in \nthe style of the humanitarian theme.  The stylesheet contains the symbols for the points, lines and polygons to be displayed, as well as the styles for labelling. There are currently no labels \nincluded in the template layers, however these styles will enable the creation of labels for individual projects in the style of OSM.  Further style updates will be added as the project progresses. Icons will be added to the style file for attributes not currently displayed on the \nhumanitarian OSM.  The styles are designed based on the  OpenStreetMap  humanitarian theme. The original style information can be found at  HDM-CartoCSS  and is derived from  CartoCSS .  Download    here .", 
-            "title": "Styles"
+            "title": "Stylesheet"
         }, 
         {
             "location": "/download/layers/", 
-            "text": "Layers\n\n\nThe zip file contains a series of template layer files at a range of zoom levels with symbology based on the OSM Humanitarian CartoCSS style.\n\n\nThe layers are designed to be used with data loaded using the ArcGIS OpenStreetMap Editor tools.\n\n\nIt is recommended to build an attribute index for the specific tags used in each feature class.\n\n\nAdditional to raw OSM data, bathymetry and land data is also required to use these layers. Please see the \n\nhere\n for more information and to download the required files.\n\n\nDownload \n \nhere\n.", 
+            "text": "Layer Files\n\n\nThe zip file contains a series of template layer files at a range of zoom levels with symbology based on the OSM Humanitarian CartoCSS style.\n\n\nThe layers are designed to be used with data loaded using the ArcGIS OpenStreetMap Editor tools.\n\n\nIt is recommended to build an attribute index for the specific tags used in each feature class.\n\n\nAdditional to raw OSM data, bathymetry and land data is also required to use these layers. Please see the \n\nhere\n for more information and to download the required files.\n\n\nDownload \n \nhere\n.", 
             "title": "Layers"
         }, 
         {
-            "location": "/download/layers/#layers", 
+            "location": "/download/layers/#layer-files", 
             "text": "The zip file contains a series of template layer files at a range of zoom levels with symbology based on the OSM Humanitarian CartoCSS style.  The layers are designed to be used with data loaded using the ArcGIS OpenStreetMap Editor tools.  It is recommended to build an attribute index for the specific tags used in each feature class.  Additional to raw OSM data, bathymetry and land data is also required to use these layers. Please see the  here  for more information and to download the required files.  Download    here .", 
-            "title": "Layers"
+            "title": "Layer Files"
         }, 
         {
             "location": "/download/data/", 
